@@ -936,7 +936,10 @@ int InternalAffineBlt(tTVPBaseBitmap *destbmp, tTVPRect destrect, const tTVPBase
 	if(refrect.left < 0 || refrect.top < 0 ||
 		refrect.right > (tjs_int)ref->GetWidth() ||
 		refrect.bottom > (tjs_int)ref->GetHeight())
+		return 1;
+#if 0
 		TVPThrowExceptionMessage(TJS_W("Out of Rectangle"));
+#endif
 
 	// multiply source rectangle points by 65536 (16.16 fixed-point)
 	// note that each pixel has actually 1.0 x 1.0 size
