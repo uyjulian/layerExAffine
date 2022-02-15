@@ -1,5 +1,6 @@
 
 #include "tjsCommHead.h"
+#include "tvpgl.h"
 #include "LayerBitmapIntf.h"
 #include "LayerBitmapAffineBlit.h"
 

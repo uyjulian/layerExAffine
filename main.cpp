@@ -8,6 +8,7 @@
 /////////////////////////////////////////////
 
 #include "ncbind/ncbind.hpp"
+#include "tvpgl.h"
 #include "LayerBitmapIntf.h"
 #include "LayerBitmapUtility.h"
 #include "LayerBitmapAffineBlit.h"
@@ -16,6 +17,7 @@
 
 static void PreRegistCallback()
 {
+	TVPCreateTable();
 	iTJSDispatch2 *global = TVPGetScriptDispatch();
 	if (global)
 	{
