@@ -1,4 +1,6 @@
 
+INCFLAGS += -Iexternal/simde
+
 SOURCES += main.cpp
 SOURCES += LayerBitmapAffineBlit.cpp
 SOURCES += LayerBitmapUtility.cpp
