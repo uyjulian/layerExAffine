@@ -157,8 +157,8 @@ TVP_GL_FUNC_DECL(void, TVPInterpLinTransAdditiveAlphaBlend_c, (tjs_uint32 *dest,
 	/* bilinear interpolation version */
 	/* note that srcpitch unit is in byte */
 	tjs_uint32   *v8;  // edi
-	tjs_uint32    v9;  // ecx
-	tjs_uint32    v10; // edx
+	tjs_int       v9;  // ecx
+	tjs_int       v10; // edx
 	tjs_uint32 *  v11; // ebp
 	tjs_uint32   *v12; // eax
 	simde__m64    v14; // mm5
@@ -226,8 +226,8 @@ TVP_GL_FUNC_DECL(void, TVPInterpLinTransAdditiveAlphaBlend_o_c, (tjs_uint32 *des
 	simde__m64    v10; // mm6
 	simde__m64    v11; // mm6
 	tjs_uint32   *v12; // edi
-	tjs_uint32    v13; // ecx
-	tjs_uint32    v14; // edx
+	tjs_int       v13; // ecx
+	tjs_int       v14; // edx
 	tjs_uint32 *  v15; // ebp
 	tjs_uint32   *v16; // eax
 	simde__m64    v18; // mm5
@@ -301,8 +301,8 @@ TVP_GL_FUNC_DECL(void, TVPInterpLinTransConstAlphaBlend_c, (tjs_uint32 *dest, tj
 	simde__m64    v10; // mm6
 	simde__m64    v11; // mm6
 	tjs_uint32   *v12; // edi
-	tjs_uint32    v13; // ecx
-	tjs_uint32    v14; // edx
+	tjs_int       v13; // ecx
+	tjs_int       v14; // edx
 	tjs_uint32 *  v15; // ebp
 	tjs_uint32   *v16; // eax
 	simde__m64    v18; // mm5
@@ -377,8 +377,8 @@ TVP_GL_FUNC_DECL(void, TVPInterpLinTransCopy_c, (tjs_uint32 *dest, tjs_int destl
 	/* bilinear interpolation version */
 	/* note that srcpitch unit is in byte */
 	tjs_uint32 *  v8;  // edi
-	tjs_uint32    v9;  // ecx
-	tjs_uint32    v10; // edx
+	tjs_int       v9;  // ecx
+	tjs_int       v10; // edx
 	tjs_uint32 *  v11; // ebp
 	tjs_uint32   *v12; // eax
 	simde__m64    v14; // mm5
